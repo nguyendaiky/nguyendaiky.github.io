@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello! I&#39;m Ky on Nguyễn Đại Kỳ</title>
+    <link>https://nguyendaiky.github.io/</link>
+    <description>Recent content in Hello! I&#39;m Ky on Nguyễn Đại Kỳ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nguyendaiky.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Something...</title>
+      <link>https://nguyendaiky.github.io/post/project1/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nguyendaiky.github.io/post/project1/</guid>
+      <description>Nevertheless, as be harangued them, the satisfaction and admiration unanimously excited by his costume were dissipated by his words; and when he reached that untoward conclusion: “As soon as his illustrious eminence, the cardinal, arrives, we will begin,” his voice was drowned in a thunder of hooting.</description>
+    </item>
+    
+    <item>
+      <title>Something...</title>
+      <link>https://nguyendaiky.github.io/post/project2/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nguyendaiky.github.io/post/project2/</guid>
+      <description>Nevertheless, as be harangued them, the satisfaction and admiration unanimously excited by his costume were dissipated by his words; and when he reached that untoward conclusion: “As soon as his illustrious eminence, the cardinal, arrives, we will begin,” his voice was drowned in a thunder of hooting.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://nguyendaiky.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nguyendaiky.github.io/contact/</guid>
+      <description>Follow me on:
+   Platform URL     Facebook: https://www.facebook.com/nguyendaikycs   Github: https://github.com/nguyendaiky    </description>
+    </item>
+    
+  </channel>
+</rss>
