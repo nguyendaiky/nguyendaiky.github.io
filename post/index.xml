@@ -8,21 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://nguyendaiky.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Something...</title>
-      <link>https://nguyendaiky.github.io/post/project1/</link>
-      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
+      <title>Kiến thức cơ bản về Github</title>
+      <link>https://nguyendaiky.github.io/post/github/</link>
+      <pubDate>Thu, 11 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://nguyendaiky.github.io/post/project1/</guid>
-      <description>Nevertheless, as be harangued them, the satisfaction and admiration unanimously excited by his costume were dissipated by his words; and when he reached that untoward conclusion: “As soon as his illustrious eminence, the cardinal, arrives, we will begin,” his voice was drowned in a thunder of hooting.</description>
-    </item>
-    
-    <item>
-      <title>Something...</title>
-      <link>https://nguyendaiky.github.io/post/project2/</link>
-      <pubDate>Sun, 10 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://nguyendaiky.github.io/post/project2/</guid>
-      <description>Nevertheless, as be harangued them, the satisfaction and admiration unanimously excited by his costume were dissipated by his words; and when he reached that untoward conclusion: “As soon as his illustrious eminence, the cardinal, arrives, we will begin,” his voice was drowned in a thunder of hooting.</description>
+      <guid>https://nguyendaiky.github.io/post/github/</guid>
+      <description>Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
+Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình.</description>
     </item>
     
   </channel>

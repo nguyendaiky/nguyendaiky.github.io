@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Kiến thức cơ bản về Github | Nguyễn Đại Kỳ</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
+Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình.">
+    <meta name="generator" content="Hugo 0.88.1" />
+    
+    
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+
+    
+    
+      <link href="https://nguyendaiky.github.io/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
+    
+
+    
+      <link rel="stylesheet" href="https://nguyendaiky.github.io/custom.css">
+    
+
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Kiến thức cơ bản về Github" />
+<meta property="og:description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
+Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nguyendaiky.github.io/post/github/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-11-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-11-11T00:00:00+00:00" />
+
+<meta itemprop="name" content="Kiến thức cơ bản về Github">
+<meta itemprop="description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
+Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình."><meta itemprop="datePublished" content="2021-11-11T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-11-11T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1475">
+<meta itemprop="keywords" content="git/github," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kiến thức cơ bản về Github"/>
+<meta name="twitter:description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
+Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình."/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="https://nguyendaiky.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Nguyễn Đại Kỳ
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://nguyendaiky.github.io/about/" title="About page">
+              About
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="https://nguyendaiky.github.io/post/" title="Posts page">
+              Posts
+            </a>
+          </li>
+          
+        </ul>
+      
+      
+
+
+
+<a href="https://www.facebook.com/nguyendaikyy" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://twitter.com/nguyendaiky" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/nguyendaikyy" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://github.com/nguyendaiky" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://nguyendaiky.github.io/post/github/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://nguyendaiky.github.io/post/github/&amp;text=Ki%e1%ba%bfn%20th%e1%bb%a9c%20c%c6%a1%20b%e1%ba%a3n%20v%e1%bb%81%20Github" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://nguyendaiky.github.io/post/github/&amp;title=Ki%e1%ba%bfn%20th%e1%bb%a9c%20c%c6%a1%20b%e1%ba%a3n%20v%e1%bb%81%20Github" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Kiến thức cơ bản về Github</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Ky Nguyen
+          
+          </strong>
+      </p>
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-11-11T00:00:00Z">November 11, 2021</time>
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><h2 id="git-là-gì">Git là gì?</h2>
+<p>Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.</p>
+<p>Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình. Mỗi người sẽ được giao làm một việc nhỏ, gộp lại thành một dự án lớn. Source code sẽ được chia ra làm nhiều phần, nhiều mô-đun nhỏ cho mỗi người làm. Vì vậy, việc quản lí tiến độ dự án, khắc phục lỗi, chạy thử… sẽ rất khó khăn và phức tạp.</p>
+<p>Do đó, nhờ có “hệ quản trị phiên bản” Git sẽ giúp giám sát những thay đổi của source code, bằng cách lưu nhiều phiên bản khác nhau của một mã nguồn, được nhân bản (clone) từ một kho chứa mã nguồn (repository). Có thể hiểu đơn giản là nó lưu lại các phiên bản của những lần thay đổi source code, có thể khôi phục lại dễ dàng trong những lần sau đó. Và những người khác cũng có thể xem các thay đổi của mình trong những lần thay đổi đó, có thể gộp phiên bản của mình vào phiên bản của họ. Sau đó đưa tất cả lên kho chứa mã nguồn chung.</p>
+<h2 id="github-là-gì">Github là gì?</h2>
+<p>Có thể nói Github là một &ldquo;mạng xã hội&rdquo; dành riêng cho lập trình viên. Đây là nơi cho phép các lập trình viên tương tác, trao đổi với nhau, theo dõi, đóng góp (contribute) và thả sao (star) cho những dự án mà bạn cảm thấy thú vị. Dự án có càng nhiều star cho thấy mức độ quan tâm và sự hữu ích mà nó đóng góp cho cộng đồng. Hoặc khi tham gia contribute vào một dự án mà bạn cảm thấy thú vị, bạn sẽ được cộng tác với những lập trình viên giỏi đến từ khắp nơi trên thế giới, từ đó học được rất nhiều điều từ họ. Hơn hết nếu dự án thành công, tên tuổi của bạn sẽ được gắn liền với dự án đó. Góp phần làm đẹp profile, CV của bạn cho công việc sau này.</p>
+<p>Một số bạn sẽ nhầm lẫn giữa 2 khái niệm Git và GitHub. Git là công cụ để track sự thay đổi trong source code. GitHub là website nơi lưu trữ tất cả các repository chứa source code trên server online. Bởi vì online nên dễ dàng cho làm việc nhóm, làm việc từ xa hoặc có thể tổ chức các project thành portfolio để show cho nhà tuyển dụng. Vì đa số các công ty lập trình đều quản lý dự án bằng Git, đôi lúc sẽ yêu cầu ứng viên có kiến thức về Git, vì vậy việc nắm rõ kiến thức về Git sẽ giúp ích rất nhiều.</p>
+<h2 id="cơ-chế-hoạt-động">Cơ chế hoạt động</h2>
+<!-- raw HTML omitted -->
+<figure><img src="https://nguyendaiky.github.io/images/post/github/GitDiagram.png"/>
+</figure>
+
+<p>Cơ chế hoạt động của git/github được chia thành 2 phần:</p>
+<ul>
+<li>Remote repository</li>
+<li>Git structures</li>
+</ul>
+<p>Remote repository đóng vai trò như là một kho lưu trữ trên internet (remote), đó là Github.</p>
+<p>Git structures là cái chúng ta cài đặt ở máy của mình (local), đó là Git.</p>
+<p>Git structures chia thành 3 phần:</p>
+<ol>
+<li>Workspace/Working tree</li>
+<li>Staging Area/Index</li>
+<li>Local repository</li>
+</ol>
+<p>Khi làm việc với Git thì các file của chúng ta sẽ có 2 trạng thái chính đó là Tracked và Untracked:</p>
+<ul>
+<li>
+<p>Untracked: là trạng thái của các file mới được tạo ra, chưa được Git đánh dấu để theo dõi.</p>
+</li>
+<li>
+<p>Tracked: là trạng thái các file đã được Git đánh dấu để theo dõi. Được chia thành 3 trạng thái phụ:</p>
+<ul>
+<li>Unmodified: không có thay đổi.</li>
+<li>Modified: đã có thay đổi nhưng chưa thêm vào Index.</li>
+<li>Staged: đã thêm vào Index và sẳn sàng cho commit.</li>
+</ul>
+<p>Lưu ý: một file phải được thêm vào Index và có trạng thái Staged thì mới có thể commit.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<figure><img src="https://nguyendaiky.github.io/images/post/github/Untitled.png"/>
+</figure>
+
+<p>Sau khi commit các file sẽ được chuyển vào local repository. Lúc này các file đó đã sẳn sàng để push lên remote repo trên Github.</p>
+<h2 id="cách-thiết-lập">Cách thiết lập</h2>
+<p>Đầu tiên chúng ta truy cập vào <a href="http://github.com">github.com</a>, nhấn Signup để đăng ký tài khoản. Nếu bạn đã có tài khoản thì nhấn Signin để đăng nhập vào.</p>
+<!-- raw HTML omitted -->
+<figure><img src="https://nguyendaiky.github.io/images/post/github/Untitled.jpeg"/>
+</figure>
+
+<p>Sau khi đăng ký và đăng nhập vào tài khoản, ta sẽ thấy giao diện Github như sau:</p>
+<!-- raw HTML omitted -->
+<figure><img src="https://nguyendaiky.github.io/images/post/github/github_dashboard.png"/>
+</figure>
+
+<p>Tiếp theo truy cập <a href="http://git-scm.com/downloads">git-scm.com/downloads</a>, chọn đúng phiên bản cho hệ điều hành của mình. Tải về và cài đặt vào máy.</p>
+<!-- raw HTML omitted -->
+<figure><img src="https://nguyendaiky.github.io/images/post/github/git_download.png"/>
+</figure>
+
+<p>Sau khi cài đặt xong, ta kiểm tra đã thành công hay chưa bằng Command Prompt/Terminal.</p>
+<p>Để mở Command Prompt trên Windows, ta nhấn tổ hợp Windows + R, gõ cmd. Để mở Terminal trên Mac/Linux, ta nhấn Ctrl + Alt + T. Sau đó gõ git &ndash;version để kiểm tra, nếu hiện ra phiên bản git hiện tại thì đã cài đặt thành công.</p>
+<p>Ta cũng tiến hành config git ở local bằng email và username đã đăng ký github.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git --version
+<span style="color:#75715e"># git version 2.32.0</span>
+git config --global user.email <span style="color:#e6db74">&#34;your-email@mail.com&#34;</span>
+git config --global user.name <span style="color:#e6db74">&#34;your-name&#34;</span>
+</code></pre></div><h2 id="cách-sử-dụng">Cách sử dụng</h2>
+<p><em>Git</em></p>
+<ul>
+<li><strong>Git init</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
+<span style="color:#75715e"># Initialized empty Git repository in ...</span>
+</code></pre></div><p>Lệnh git init sẽ tạo một local reposity ngay thư mục hiện tại. Hiển thị file ẩn lên, ta thấy một folder .git đã được tạo ra, trong đó chứa các thông tin và thiết lập cho reposity.</p>
+<ul>
+<li><strong>Git add</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add filename.txt
+git add .
+</code></pre></div><p>Lệnh git add thay đổi trạng thái file thành Tracked và thêm file đó vào Index để tiến hành theo dõi sự thay đổi của file. Lệnh git add filename.txt để thêm file cụ thể, lệnh git add . để thêm tất cả các file.</p>
+<ul>
+<li><strong>Git restore</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git restore --staged &lt;file&gt;
+</code></pre></div><p>Lệnh git restore dùng để unstage một file (có thể hiểu là ngược lại với lệnh git add).</p>
+<ul>
+<li><strong>Git status</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git status
+</code></pre></div><p>Lệnh git dùng để kiểm tra trạng thái các file trong local repository. Các file trong repository được git theo dõi theo các trạng thái khác nhau. Màu xanh là các file ở trạng thái stage và đã thêm vào Index, sẳn sàng cho việc commit. Màu đỏ là các file untracked, modified, deleted, cần phải dùng lệnh git add thêm vào Index để commit chúng.</p>
+<!-- raw HTML omitted -->
+<figure><img src="https://nguyendaiky.github.io/images/post/github/Untitled%201.png"/>
+</figure>
+
+<ul>
+<li><strong>Git commit</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit -m <span style="color:#e6db74">&#39;your-message&#39;</span>
+</code></pre></div><!-- raw HTML omitted -->
+<figure><img src="https://nguyendaiky.github.io/images/post/github/Untitled%202.png"/>
+</figure>
+
+<p>Lệnh git commit lưu các thay đổi vào local repository. Ta có thể dùng lệnh <strong>git commit -a</strong> để thực hiện add và commit các thay đổi cùng lúc vào local repository.</p>
+<ul>
+<li><strong>Git push</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push origin <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
+</code></pre></div><p>Lệnh git push đẩy file đã commit từ local repository lên remote repository (Github).</p>
+<ul>
+<li><strong>Git clone</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone <span style="color:#f92672">[</span>link-to-repository<span style="color:#f92672">]</span>
+</code></pre></div><p>Lệnh git clone dùng để tạo một bản clone của remote repository (nói dễ hiểu là down repository về máy). Đây là lệnh dùng rất thường xuyên khi tìm kiếm mã nguồn mở trên mạng. Có 2 cách để tải dự án về máy, một là download bằng file zip, hai là dùng git clone.</p>
+<ul>
+<li><strong>Git remote</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote add <span style="color:#f92672">[</span>name<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>link-to-remote-repository<span style="color:#f92672">]</span>
+</code></pre></div><p>Lệnh git remote dùng liên kết local repository và remote repository.</p>
+<ul>
+<li><strong>Git pull</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull origin <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
+</code></pre></div><p>Lệnh git pull tải các file ở remote repository đã liên kết về local repository (có thể hiểu là ngược lại với git push).</p>
+<ul>
+<li><strong>Git branch</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch
+</code></pre></div><p>Lệnh git branch dùng để xem nhánh làm việc hiện tại. Để tạo nhánh mới và xóa nhánh ta dùng các lệnh bên dưới:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span> <span style="color:#75715e"># create</span>
+git branch -d <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span> <span style="color:#75715e"># delete</span>
+</code></pre></div><ul>
+<li><strong>Git switch</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git switch <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
+</code></pre></div><p>Lệnh git switch dùng để chuyển sang nhánh làm việc mới.</p>
+<ul>
+<li><strong>Git merge</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git merge <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
+</code></pre></div><p>Lệnh git merge gộp nhánh branch-name vào nhánh làm việc hiện tại.</p>
+<ul>
+<li><strong>Git log</strong></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git log
+</code></pre></div><p>Lệnh git log dùng để xem lịch sử các commit của repository cho đến hiện tại. Ta thêm —oneline để xem ngắn gọn và thêm —summary để xem chi tiết.</p>
+<p>Link tham khảo: <a href="https://github.com/joshnh/Git-Commands">Git-Commands</a></p>
+<p><em>Github</em></p>
+<ul>
+<li>Tạo repository</li>
+</ul>
+<p>Ở trang chủ Github, ta nhấn New. Đặt tên repository, mô tả, trạng thái, Readme và giấy phép.</p>
+<ul>
+<li>Commit</li>
+</ul>
+<p>Để thay đổi nội dung một file ta chọn file. Nhấn edit, sửa file. Sau đó điền commit message rồi nhấn Commit. Lệnh này sẽ tiến hành thay đổi file và lưu vào repo.</p>
+<ul>
+<li>Request</li>
+</ul>
+<p>Cho biết những thay đổi trong source code, và yêu cầu owner của source code xem xét nó và merge nó vào master branch.</p>
+<ul>
+<li>Merge</li>
+</ul>
+<p>Lệnh merge này cho phép bạn hợp nhất những thay đổi vào một branch.</p>
+<h2 id="trang-trí-github">Trang trí github</h2>
+<p>Tạo repo có tên trùng với username của bạn, add file README và thực hiện trang trí bằng markdown.</p>
+<p>Các bạn tham khảo các file README tại <a href="https://github.com/kautukkundan/Awesome-Profile-README-templates">Awesome-Profile-README-templates</a> và làm một trang cho mình.</p>
+<ul class="pa0">
+  
+   <li class="list">
+     <a href="https://nguyendaiky.github.io/tags/git/github" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">git/github</a>
+   </li>
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l"><div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">What&#39;s in this post</p>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#git-là-gì">Git là gì?</a></li>
+    <li><a href="#github-là-gì">Github là gì?</a></li>
+    <li><a href="#cơ-chế-hoạt-động">Cơ chế hoạt động</a></li>
+    <li><a href="#cách-thiết-lập">Cách thiết lập</a></li>
+    <li><a href="#cách-sử-dụng">Cách sử dụng</a></li>
+    <li><a href="#trang-trí-github">Trang trí github</a></li>
+  </ul>
+</nav>
+  </div>
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://nguyendaiky.github.io/" >
+    &copy;  Nguyễn Đại Kỳ 2021 
+  </a>
+    <div>
+
+
+
+<a href="https://www.facebook.com/nguyendaikyy" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://twitter.com/nguyendaiky" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+<a href="https://www.instagram.com/nguyendaikyy" target="_blank" class="link-transition instagram link dib z-999 pt3 pt0-l mr1" title="Instagram link" rel="noopener" aria-label="follow on Instagram——Opens in a new window">
+  <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M42.271,26.578v-0.006c0.502,0,1.005,0.01,1.508-0.002  c0.646-0.017,1.172-0.57,1.172-1.217c0-0.963,0-1.927,0-2.89c0-0.691-0.547-1.24-1.236-1.241c-0.961,0-1.922-0.001-2.883,0  c-0.688,0.001-1.236,0.552-1.236,1.243c-0.001,0.955-0.004,1.91,0.003,2.865c0.001,0.143,0.028,0.291,0.073,0.426  c0.173,0.508,0.639,0.82,1.209,0.823C41.344,26.579,41.808,26.578,42.271,26.578z M33,27.817c-3.384-0.002-6.135,2.721-6.182,6.089  c-0.049,3.46,2.72,6.201,6.04,6.272c3.454,0.074,6.248-2.686,6.321-6.043C39.254,30.675,36.462,27.815,33,27.817z M21.046,31.116  v0.082c0,4.515-0.001,9.03,0,13.545c0,0.649,0.562,1.208,1.212,1.208c7.16,0.001,14.319,0.001,21.479,0  c0.656,0,1.215-0.557,1.215-1.212c0.001-4.509,0-9.02,0-13.528v-0.094h-2.912c0.411,1.313,0.537,2.651,0.376,4.014  c-0.161,1.363-0.601,2.631-1.316,3.803s-1.644,2.145-2.779,2.918c-2.944,2.006-6.821,2.182-9.946,0.428  c-1.579-0.885-2.819-2.12-3.685-3.713c-1.289-2.373-1.495-4.865-0.739-7.451C22.983,31.116,22.021,31.116,21.046,31.116z   M45.205,49.255c0.159-0.026,0.318-0.049,0.475-0.083c1.246-0.265,2.264-1.304,2.508-2.557c0.025-0.137,0.045-0.273,0.067-0.409  V21.794c-0.021-0.133-0.04-0.268-0.065-0.401c-0.268-1.367-1.396-2.428-2.78-2.618c-0.058-0.007-0.113-0.02-0.17-0.03H20.761  c-0.147,0.027-0.296,0.047-0.441,0.08c-1.352,0.308-2.352,1.396-2.545,2.766c-0.008,0.057-0.02,0.114-0.029,0.171V46.24  c0.028,0.154,0.05,0.311,0.085,0.465c0.299,1.322,1.427,2.347,2.77,2.52c0.064,0.008,0.13,0.021,0.195,0.03H45.205z M33,64  C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+<a href="https://github.com/nguyendaiky" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+  <svg  height="32px"  style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z"/>
+</svg>
+
+<span class="new-window"><svg  height="8px"  style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+<path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+</span></a>
+
+
+
+
+
+
+
+</div>
+  </div>
+</footer>
+
+    
+
+  <script src="https://nguyendaiky.github.io/dist/js/app.3fc0f988d21662902933.js"></script>
+
+
+  </body>
+</html>
