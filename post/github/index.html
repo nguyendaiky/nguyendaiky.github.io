@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Kiến thức cơ bản về Github | Nguyễn Đại Kỳ</title>
+    <title>Tìm hiểu Git/Github cơ bản | Nguyễn Đại Kỳ</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
 Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình.">
@@ -20,17 +20,17 @@ Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật sour
     
 
     
-      <link rel="stylesheet" href="https://nguyendaiky.github.io/custom.css">
-    
 
     
       
+<link rel="shortcut icon" href="https://nguyendaiky.github.io/images%0c.svg" type="image/x-icon" />
+
 
     
 
     
     
-    <meta property="og:title" content="Kiến thức cơ bản về Github" />
+    <meta property="og:title" content="Tìm hiểu Git/Github cơ bản" />
 <meta property="og:description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
 Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình." />
 <meta property="og:type" content="article" />
@@ -38,17 +38,43 @@ Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật sour
 <meta property="article:published_time" content="2021-11-11T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-11-11T00:00:00+00:00" />
 
-<meta itemprop="name" content="Kiến thức cơ bản về Github">
+<meta itemprop="name" content="Tìm hiểu Git/Github cơ bản">
 <meta itemprop="description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
 Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình."><meta itemprop="datePublished" content="2021-11-11T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-11-11T00:00:00+00:00" />
 <meta itemprop="wordCount" content="1475">
 <meta itemprop="keywords" content="git/github," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Kiến thức cơ bản về Github"/>
+<meta name="twitter:title" content="Tìm hiểu Git/Github cơ bản"/>
 <meta name="twitter:description" content="Git là gì? Git là một “hệ quản trị phiên bản” (version control) được phát triển bởi Linus Torvalds.
 Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật source code, dù cho dự án đó đã hoàn thành thì vẫn phải update các phiên bản mới cho phần mềm, sửa lỗi và bổ sung thêm các tính năng khác… Hơn hết, khi làm việc nhóm cùng đội của mình."/>
 
 	
+       <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open Sans" type="text/css" media="all" />
+     
+       <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fira Mono" type="text/css" media="all" />
+     
+
+ <style>
+ .serif {
+     font-family: 'Open Sans' !important;
+ }
+
+.athelas {
+    font-family: 'avenir next', avenir, sans-serif !important;
+    font-weight: bold;
+    color: #000;
+}
+
+.bg-light-gray.pa3.nested-list-reset.nested-copy-line-height.nested-links {
+    position: -webkit-sticky;  
+    position: sticky;
+    top: 0;
+}
+
+ code {
+    font-family: 'Fira Mono' !important; 
+ }
+ </style>
   </head>
 
   <body class="ma0 avenir bg-near-white">
@@ -57,8 +83,10 @@ Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật sour
    
   
 
-  <header>
-    <div class="bg-black">
+  
+  
+  <header class="cover bg-top" style="background-image: url('https://nguyendaiky.github.io/images/post/github/github.png');">
+    <div class="pb3-m pb6-l bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="https://nguyendaiky.github.io/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -140,6 +168,12 @@ Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật sour
   </div>
 </nav>
 
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Tìm hiểu Git/Github cơ bản</h1>
+          
+        
+      </div>
     </div>
   </header>
 
@@ -169,13 +203,13 @@ Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật sour
 
     
     
-    <a href="https://twitter.com/share?url=https://nguyendaiky.github.io/post/github/&amp;text=Ki%e1%ba%bfn%20th%e1%bb%a9c%20c%c6%a1%20b%e1%ba%a3n%20v%e1%bb%81%20Github" class="twitter no-underline" aria-label="share on Twitter">
+    <a href="https://twitter.com/share?url=https://nguyendaiky.github.io/post/github/&amp;text=T%c3%acm%20hi%e1%bb%83u%20Git/Github%20c%c6%a1%20b%e1%ba%a3n" class="twitter no-underline" aria-label="share on Twitter">
       <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
     </a>
 
     
-    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://nguyendaiky.github.io/post/github/&amp;title=Ki%e1%ba%bfn%20th%e1%bb%a9c%20c%c6%a1%20b%e1%ba%a3n%20v%e1%bb%81%20Github" class="linkedin no-underline" aria-label="share on LinkedIn">
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://nguyendaiky.github.io/post/github/&amp;title=T%c3%acm%20hi%e1%bb%83u%20Git/Github%20c%c6%a1%20b%e1%ba%a3n" class="linkedin no-underline" aria-label="share on LinkedIn">
       <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
@@ -184,12 +218,12 @@ Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật sour
   </div>
 
 
-      <h1 class="f1 athelas mt3 mb1">Kiến thức cơ bản về Github</h1>
+      <h1 class="f1 athelas mt3 mb1">Tìm hiểu Git/Github cơ bản</h1>
       
       <p class="tracked">
           By <strong>
           
-              Ky Nguyen
+              Kỳ Nguyễn
           
           </strong>
       </p>
@@ -269,26 +303,26 @@ Khi lập trình viên làm việc, thì họ sẽ liên tục cập nhật sour
 git config --global user.email <span style="color:#e6db74">&#34;your-email@mail.com&#34;</span>
 git config --global user.name <span style="color:#e6db74">&#34;your-name&#34;</span>
 </code></pre></div><h2 id="cách-sử-dụng">Cách sử dụng</h2>
-<p><em>Git</em></p>
+<p><strong>Git</strong></p>
 <ul>
-<li><strong>Git init</strong></li>
+<li><em>Git init</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git init
 <span style="color:#75715e"># Initialized empty Git repository in ...</span>
 </code></pre></div><p>Lệnh git init sẽ tạo một local reposity ngay thư mục hiện tại. Hiển thị file ẩn lên, ta thấy một folder .git đã được tạo ra, trong đó chứa các thông tin và thiết lập cho reposity.</p>
 <ul>
-<li><strong>Git add</strong></li>
+<li><em>Git add</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git add filename.txt
 git add .
 </code></pre></div><p>Lệnh git add thay đổi trạng thái file thành Tracked và thêm file đó vào Index để tiến hành theo dõi sự thay đổi của file. Lệnh git add filename.txt để thêm file cụ thể, lệnh git add . để thêm tất cả các file.</p>
 <ul>
-<li><strong>Git restore</strong></li>
+<li><em>Git restore</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git restore --staged &lt;file&gt;
 </code></pre></div><p>Lệnh git restore dùng để unstage một file (có thể hiểu là ngược lại với lệnh git add).</p>
 <ul>
-<li><strong>Git status</strong></li>
+<li><em>Git status</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git status
 </code></pre></div><p>Lệnh git dùng để kiểm tra trạng thái các file trong local repository. Các file trong repository được git theo dõi theo các trạng thái khác nhau. Màu xanh là các file ở trạng thái stage và đã thêm vào Index, sẳn sàng cho việc commit. Màu đỏ là các file untracked, modified, deleted, cần phải dùng lệnh git add thêm vào Index để commit chúng.</p>
@@ -297,7 +331,7 @@ git add .
 </figure>
 
 <ul>
-<li><strong>Git commit</strong></li>
+<li><em>Git commit</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git commit -m <span style="color:#e6db74">&#39;your-message&#39;</span>
 </code></pre></div><!-- raw HTML omitted -->
@@ -306,63 +340,63 @@ git add .
 
 <p>Lệnh git commit lưu các thay đổi vào local repository. Ta có thể dùng lệnh <strong>git commit -a</strong> để thực hiện add và commit các thay đổi cùng lúc vào local repository.</p>
 <ul>
-<li><strong>Git push</strong></li>
+<li><em>Git push</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git push origin <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
 </code></pre></div><p>Lệnh git push đẩy file đã commit từ local repository lên remote repository (Github).</p>
 <ul>
-<li><strong>Git clone</strong></li>
+<li><em>Git clone</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone <span style="color:#f92672">[</span>link-to-repository<span style="color:#f92672">]</span>
 </code></pre></div><p>Lệnh git clone dùng để tạo một bản clone của remote repository (nói dễ hiểu là down repository về máy). Đây là lệnh dùng rất thường xuyên khi tìm kiếm mã nguồn mở trên mạng. Có 2 cách để tải dự án về máy, một là download bằng file zip, hai là dùng git clone.</p>
 <ul>
-<li><strong>Git remote</strong></li>
+<li><em>Git remote</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git remote add <span style="color:#f92672">[</span>name<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>link-to-remote-repository<span style="color:#f92672">]</span>
 </code></pre></div><p>Lệnh git remote dùng liên kết local repository và remote repository.</p>
 <ul>
-<li><strong>Git pull</strong></li>
+<li><em>Git pull</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git pull origin <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
 </code></pre></div><p>Lệnh git pull tải các file ở remote repository đã liên kết về local repository (có thể hiểu là ngược lại với git push).</p>
 <ul>
-<li><strong>Git branch</strong></li>
+<li><em>Git branch</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch
 </code></pre></div><p>Lệnh git branch dùng để xem nhánh làm việc hiện tại. Để tạo nhánh mới và xóa nhánh ta dùng các lệnh bên dưới:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git branch <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span> <span style="color:#75715e"># create</span>
 git branch -d <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span> <span style="color:#75715e"># delete</span>
 </code></pre></div><ul>
-<li><strong>Git switch</strong></li>
+<li><em>Git switch</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git switch <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
 </code></pre></div><p>Lệnh git switch dùng để chuyển sang nhánh làm việc mới.</p>
 <ul>
-<li><strong>Git merge</strong></li>
+<li><em>Git merge</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git merge <span style="color:#f92672">[</span>branch-name<span style="color:#f92672">]</span>
 </code></pre></div><p>Lệnh git merge gộp nhánh branch-name vào nhánh làm việc hiện tại.</p>
 <ul>
-<li><strong>Git log</strong></li>
+<li><em>Git log</em></li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git log
 </code></pre></div><p>Lệnh git log dùng để xem lịch sử các commit của repository cho đến hiện tại. Ta thêm —oneline để xem ngắn gọn và thêm —summary để xem chi tiết.</p>
 <p>Link tham khảo: <a href="https://github.com/joshnh/Git-Commands">Git-Commands</a></p>
-<p><em>Github</em></p>
+<p><strong>Github</strong></p>
 <ul>
-<li>Tạo repository</li>
+<li><em>Tạo repository</em></li>
 </ul>
 <p>Ở trang chủ Github, ta nhấn New. Đặt tên repository, mô tả, trạng thái, Readme và giấy phép.</p>
 <ul>
-<li>Commit</li>
+<li><em>Commit</em></li>
 </ul>
 <p>Để thay đổi nội dung một file ta chọn file. Nhấn edit, sửa file. Sau đó điền commit message rồi nhấn Commit. Lệnh này sẽ tiến hành thay đổi file và lưu vào repo.</p>
 <ul>
-<li>Request</li>
+<li><em>Request</em></li>
 </ul>
 <p>Cho biết những thay đổi trong source code, và yêu cầu owner của source code xem xét nó và merge nó vào master branch.</p>
 <ul>
-<li>Merge</li>
+<li><em>Merge</em></li>
 </ul>
 <p>Lệnh merge này cho phép bạn hợp nhất những thay đổi vào một branch.</p>
 <h2 id="trang-trí-github">Trang trí github</h2>
